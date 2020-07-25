@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Profile(title: 'Carol'),
+      home: Profile(nickname: 'carol_macedo_220'),
     );
   }
 }

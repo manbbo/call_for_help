@@ -3,8 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
-  String title;
-  Profile({Key key, this.title}) : super(key: key);
+  String nickname;
+  Profile({Key key, this.nickname}) : super(key: key);
   @override
   _ProfileState createState() => _ProfileState();
 }
@@ -12,8 +12,9 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   Widget decoration() {
     return ClipPath(
-      clipper: Clipper(),
+      //clipper: Clipper(),
       child: new Container(
+        padding: EdgeInsets.only(top: 70),
         child: new Stack(
           children: <Widget>[
             new Positioned(
@@ -25,9 +26,9 @@ class _ProfileState extends State<Profile> {
               width: 150,
               left: 125,
             ),
-            new Container(child: new Text.rich(TextSpan(text: widget.title, style: TextStyle(color: Colors.black, fontSize: 30))),
+            new Container(child: new Text.rich(TextSpan(text: widget.nickname, style: TextStyle(color: Colors.black, fontSize: 30))),
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 150),),
+              padding: EdgeInsets.only(top: 160),),
           ],
         ),
         decoration: BoxDecoration (
@@ -52,7 +53,12 @@ class _ProfileState extends State<Profile> {
             ),
             //padding: EdgeInsets.only(top: 50),
             //alignment: Alignment.topCenter,
-          )
+          ),
+          new Container(
+            child: IconButton(icon: Icon(Icons.settings, color: Colors.black,size: 30,)),
+            padding: EdgeInsets.only(top: 30),
+            alignment: Alignment.topRight,
+          ),
         ],
       ),
     );
