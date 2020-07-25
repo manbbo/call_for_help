@@ -27,15 +27,23 @@ class _ProfileState extends State<Profile> {
               width: 150,
               left: 125,
             ),
-            new Container(child: new Text.rich(TextSpan(text: widget.name, style: TextStyle(color: Colors.black, fontSize: 30))),
+            new Container(
+              child: new Text.rich(TextSpan(
+                  text: widget.name,
+                  style: TextStyle(color: Colors.black, fontSize: 30))),
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 155),),
-            new Container(child: new Text.rich(TextSpan(text: widget.nickname, style: TextStyle(color: Colors.black, fontSize: 15))),
+              padding: EdgeInsets.only(top: 155),
+            ),
+            new Container(
+              child: new Text.rich(TextSpan(
+                  text: widget.nickname,
+                  style: TextStyle(color: Colors.black, fontSize: 15))),
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 190),),
+              padding: EdgeInsets.only(top: 190),
+            ),
           ],
         ),
-        decoration: BoxDecoration (
+        decoration: BoxDecoration(
           color: Colors.amber,
         ),
         height: 300,
@@ -59,12 +67,59 @@ class _ProfileState extends State<Profile> {
             //alignment: Alignment.topCenter,
           ),
           new Container(
-            child: IconButton(icon: Icon(Icons.settings, color: Colors.black,size: 30,)),
+            child: IconButton(
+                icon: Icon(
+              Icons.settings,
+              color: Colors.black,
+              size: 30,
+            )),
             padding: EdgeInsets.only(top: 30),
             alignment: Alignment.topRight,
           ),
-          new Container(
-            child: new AchievementList(achievements: [new Achievement(title: 'Hello world', quantity: 1,)],),
+          new Positioned(
+            height: (MediaQuery.of(context).size.height),
+            width: MediaQuery.of(context).size.width,
+            top: MediaQuery.of(context).size.height/2,
+            child: new AchievementList(
+              achievements: [
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                ),
+                new Achievement(
+                  title: 'Hello world',
+                  quantity: 1,
+                )
+              ],
+            ),
           )
         ],
       ),
@@ -79,10 +134,12 @@ class Clipper extends CustomClipper<Path> {
     var path = Path()
       ..lineTo(size.width, size.height)
       ..arcToPoint(Offset(size.width, radius))
-      ..lineTo(size.width-radius, size.height - radius)
-      ..arcToPoint(Offset(size.width - radius, size.height),radius: Radius.circular(radius))
+      ..lineTo(size.width - radius, size.height - radius)
+      ..arcToPoint(Offset(size.width - radius, size.height),
+          radius: Radius.circular(radius))
       ..lineTo(radius, size.height)
-      ..arcToPoint(Offset(0, size.height - radius), radius: Radius.circular(radius), clockwise: false)
+      ..arcToPoint(Offset(0, size.height - radius),
+          radius: Radius.circular(radius), clockwise: false)
       ..lineTo(0, radius)
       ..arcToPoint(Offset(radius, 0), radius: Radius.elliptical(40, 20))
       ..close();

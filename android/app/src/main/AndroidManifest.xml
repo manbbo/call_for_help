@@ -9,6 +9,10 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="Call for Help"
         android:icon="@mipmap/ic_launcher">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDxR_fGSq20uewWJhcm6OEeINhDziugu3A"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

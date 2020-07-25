@@ -17,7 +17,7 @@ class _AchievementState extends State<Achievement> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Container(
-      height: 100,
+      height: 80,
       child: new Stack(
         textDirection: TextDirection.ltr,
         fit: StackFit.loose,
@@ -67,6 +67,7 @@ class _AchievementListState extends State<AchievementList> {
           widget.achievements[index],
       itemCount: widget.achievements.length,
       separatorBuilder: (BuildContext context, int index) => const Divider(),
+      addAutomaticKeepAlives: false,
     );
   }
 }
