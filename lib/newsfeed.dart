@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-//Caroussel at homepage
+import 'package:carousel_slider/carousel_slider.dart';
+
+/// Caroussel
+/// aqui serão postadas 5 noticias de interesse
 
 class NewsFeed extends StatefulWidget {
   @override

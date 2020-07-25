@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatefulWidget {
-  String title;
-  Login ({Key key, this.title}) : super(key: key);
+class ChatPage extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _ChatPageState createState() => _ChatPageState();
 }
 
-class _LoginState extends State<Login> {
+class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Scaffold(
       body: new Stack(
         children: <Widget>[
           new Container(
-            child: Text.rich(new TextSpan(text: widget.title)),
+            child: Text.rich(new TextSpan(text: 'widget.title')),
             alignment: Alignment.center,
           ),
           new Container(

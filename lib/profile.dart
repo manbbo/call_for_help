@@ -1,10 +1,11 @@
+import 'package:callforhelp/gamification.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatefulWidget {
-  String nickname;
-  Profile({Key key, this.nickname}) : super(key: key);
+  String nickname, name;
+  Profile({Key key, this.nickname, this.name}) : super(key: key);
   @override
   _ProfileState createState() => _ProfileState();
 }
@@ -14,7 +15,7 @@ class _ProfileState extends State<Profile> {
     return ClipPath(
       //clipper: Clipper(),
       child: new Container(
-        padding: EdgeInsets.only(top: 70),
+        padding: EdgeInsets.only(top: 50),
         child: new Stack(
           children: <Widget>[
             new Positioned(
@@ -26,9 +27,12 @@ class _ProfileState extends State<Profile> {
               width: 150,
               left: 125,
             ),
-            new Container(child: new Text.rich(TextSpan(text: widget.nickname, style: TextStyle(color: Colors.black, fontSize: 30))),
+            new Container(child: new Text.rich(TextSpan(text: widget.name, style: TextStyle(color: Colors.black, fontSize: 30))),
               alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 160),),
+              padding: EdgeInsets.only(top: 155),),
+            new Container(child: new Text.rich(TextSpan(text: widget.nickname, style: TextStyle(color: Colors.black, fontSize: 15))),
+              alignment: Alignment.topCenter,
+              padding: EdgeInsets.only(top: 190),),
           ],
         ),
         decoration: BoxDecoration (
@@ -59,6 +63,9 @@ class _ProfileState extends State<Profile> {
             padding: EdgeInsets.only(top: 30),
             alignment: Alignment.topRight,
           ),
+          new Container(
+            child: new AchievementList(achievements: [new Achievement(title: 'Hello world', quantity: 1,)],),
+          )
         ],
       ),
     );
