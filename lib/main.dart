@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'firstpage.dart';
 import 'home.dart';
 import 'notifications.dart';
 import 'chat.dart';
@@ -18,13 +19,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(
-        pages: <Widget>[Home(title: 'HOMEPAGE',),
-          Notifications(),
-          ChatPage(),
-          Profile(nickname: '@carol_macedo_220', name: 'Carol',),
-        ],
-      ),
+      home: FirstPage()
+      //MainPage(
+        //pages: <Widget>[Home(title: 'HOMEPAGE',),
+          //Notifications(),
+          //ChatPage(),
+         // Profile(nickname: '@carol_macedo_220', name: 'Carol',),
+       // ],
+      //),
     );
   }
 }
