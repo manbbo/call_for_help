@@ -104,18 +104,19 @@ class _FirstPageState extends State<FirstPage> {
                       style: TextStyle(fontSize: 15, color: Colors.black)))
                 ],
               ),
-              RaisedButton(
-                child: Text.rich(TextSpan(
-                    text: "Enter",
-                    style: TextStyle(fontSize: 24, color: Colors.white))),
-                color: Color.fromRGBO(209, 71, 78, 1),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
+              new ButtonTheme(
+                minWidth: 125,
+                height: 32,
+                child: new RaisedButton(
+                  child: Text.rich(TextSpan(
+                      text: "Enter",
+                      style: TextStyle(fontSize: 24, color: Colors.white))),
+                  color: Color.fromRGBO(209, 71, 78, 1),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                  ),
+                  onPressed: () => {},
                 ),
-                onPressed: () => {},
-              ),
-              new Container(
-                height: 42,
               ),
             ],
             mainAxisAlignment: MainAxisAlignment.center,
@@ -129,9 +130,44 @@ class _FirstPageState extends State<FirstPage> {
                 child: Container(
                   width: 500,
                   height: 287.58,
-                  color: Colors.red,
+                  color: Color.fromRGBO(209, 71, 78, 1),
+                ),),),
+              new Container(
+                padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2) +250),
+                alignment: Alignment.bottomCenter,
+                child: new Column(
+                  children: <Widget>[
+                    new ButtonTheme(
+                      minWidth: 260,
+                      height: 32,
+                      child: new RaisedButton(
+                        child: Text.rich(TextSpan(
+                            text: "First Access",
+                            style: TextStyle(fontSize: 24, color: Colors.white))),
+                        color: Color.fromRGBO(242, 174, 193, 1),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                        ),
+                        onPressed: () => {},
+                      ),
+                    ),
+                    new ButtonTheme(
+                      minWidth: 260,
+                      height: 32,
+                      child: new RaisedButton(
+                        child: Text.rich(TextSpan(
+                            text: "Visitor",
+                            style: TextStyle(fontSize: 24, color: Colors.white))),
+                        color: Color.fromRGBO(242, 174, 193, 1),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                        ),
+                        onPressed: () => {},
+                      ),
+                    ),
+                  ],
                 ),
-              ),),
+              )
             ],
           ),
         ],
