@@ -77,9 +77,9 @@ class _ProfileState extends State<Profile> {
             alignment: Alignment.topRight,
           ),
           new Positioned(
-            height: (MediaQuery.of(context).size.height),
+            height: (MediaQuery.of(context).size.height/2) - 40,
             width: MediaQuery.of(context).size.width,
-            top: MediaQuery.of(context).size.height/2,
+            top: (MediaQuery.of(context).size.height/2) - 20,
             child: new AchievementList(
               achievements: [
                 new Achievement(
@@ -88,35 +88,35 @@ class _ProfileState extends State<Profile> {
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 2,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 3,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 4,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 5,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 6,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 7,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 8,
                 ),
                 new Achievement(
                   title: 'Hello world',
-                  quantity: 1,
+                  quantity: 9,
                 )
               ],
             ),

@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
               title: Text('CHAT')
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person, color: Colors.black,),
               title: Text('PROFILE')
           ),
         ],
