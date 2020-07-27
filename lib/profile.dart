@@ -23,11 +23,11 @@ class _ProfileState extends State<Profile> {
                 child: Image.network(
                     'https://pbs.twimg.com/profile_images/1192936776765181953/WII_Ai_K_400x400.jpg'),
               ),
-              height: 150,
-              width: 150,
+              height: 120,
+              width: 120,
               alignment: Alignment.centerLeft,
             ),
-            new Container( width: 20,),
+            new Container( width: 5,),
             new Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -64,22 +64,6 @@ class _ProfileState extends State<Profile> {
             child: new Stack(
               children: <Widget>[
                 decoration(),
-                new Positioned(child: Container(
-                    alignment: Alignment.center,
-                    width: 280,
-                    height: 40,
-                    child: Text.rich(TextSpan(
-                        text: 'My Achievements',
-                        style: TextStyle(color: Colors.black, fontSize: 20)
-                    )),
-                    decoration: BoxDecoration(
-                        color: Color.fromRGBO(209, 71, 78, 1),
-                        borderRadius:  BorderRadius.circular(20)
-                    ),
-                  ),
-                  top: MediaQuery.of(context).size.height/2.8,
-                  left: MediaQuery.of(context).size.width/5.9,
-                )
                 // padding: EdgeInsets.only(top: MediaQuery.of(context).size.height/4),
               ],
             ),
@@ -89,9 +73,9 @@ class _ProfileState extends State<Profile> {
                 icon: Icon(
               Icons.settings,
               color: Colors.black,
-              size: 30,
+              size: 40,
             )),
-            padding: EdgeInsets.only(top: 30),
+            padding: EdgeInsets.only(top: 30, right: 10),
             alignment: Alignment.topRight,
           ),
           new Positioned(
@@ -126,6 +110,22 @@ class _ProfileState extends State<Profile> {
                 ),
               ],
             ),
+          ),
+          new Positioned(child: Container(
+            alignment: Alignment.center,
+            width: 280,
+            height: 40,
+            child: Text.rich(TextSpan(
+                text: 'My Achievements',
+                style: TextStyle(color: Colors.black, fontSize: 20)
+            )),
+            decoration: BoxDecoration(
+                color: Color.fromRGBO(209, 71, 78, 1),
+                borderRadius:  BorderRadius.circular(20)
+            ),
+          ),
+            top: MediaQuery.of(context).size.height/2.8,
+            left: MediaQuery.of(context).size.width/5.9,
           )
         ],
       ),

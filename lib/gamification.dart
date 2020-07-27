@@ -35,14 +35,14 @@ class _AchievementState extends State<Achievement> {
             child: new Text.rich(
               new TextSpan(
                   text: '${widget.quantity.toString()} ${widget.title}',
-                  style: TextStyle(color: Colors.black, fontSize: 25)),
+                  style: TextStyle(color: Colors.black, fontSize: 20)),
               softWrap: true,
             ),
           ),
           new Container(
             alignment: Alignment.centerRight,
             padding: EdgeInsets.only(left: 80, top: 5),
-            child: new IconButton(icon: Icon(Icons.share, size: 30,), onPressed: null)
+            child: new IconButton(icon: Icon(Icons.share, size: 30,), onPressed: () => {})
           ),
         ],
       ),

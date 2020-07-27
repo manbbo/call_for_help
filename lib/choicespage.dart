@@ -21,6 +21,16 @@ class _CommunityPageState extends State<CommunityPage> {
           child: Stack(
             overflow: Overflow.visible,
             children: <Widget>[
+              new Container(
+                padding: EdgeInsets.only(top: 30),
+                width: MediaQuery.of(context).size.width,
+                alignment: Alignment.topLeft,
+                child: new IconButton(icon: Icon(Icons.arrow_back_ios
+                ), onPressed: () => Navigator.pop(context)),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(209, 71, 78, 1),
+                ),
+              ),
               ClipPath(
                 child: new Container(
                   height: 230,
@@ -279,6 +289,16 @@ class _EnterprisePageState extends State<EnterprisePage> {
         body: Container(
           child: Stack(
             children: <Widget>[
+              new Container(
+                padding: EdgeInsets.only(top: 30),
+                width: MediaQuery.of(context).size.width,
+                alignment: Alignment.topLeft,
+                child: new IconButton(icon: Icon(Icons.arrow_back_ios
+                ), onPressed: () => Navigator.pop(context)),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(209, 71, 78, 1),
+                ),
+              ),
               ClipPath(
                 child: new Container(
                     height: 230,
@@ -534,6 +554,16 @@ class _ResearcherPageState extends State<ResearcherPage> {
         body: Container(
           child: Stack(
             children: <Widget>[
+              new Container(
+                padding: EdgeInsets.only(top: 30),
+                width: MediaQuery.of(context).size.width,
+                alignment: Alignment.topLeft,
+                child: new IconButton(icon: Icon(Icons.arrow_back_ios
+                ), onPressed: () => Navigator.pop(context)),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(209, 71, 78, 1),
+                ),
+              ),
           ClipPath(
           child: new Container(
               height: 230,
@@ -543,7 +573,6 @@ class _ResearcherPageState extends State<ResearcherPage> {
               child: Text('Researcher',
                   style: TextStyle(
                       color: Color.fromRGBO(209, 71, 78, 1),
-                      
                       fontSize: 40
                   ))
           ),
@@ -790,6 +819,16 @@ class _VolunteerPageState extends State<VolunteerPage> {
         body: Container(
           child: Stack(
             children: <Widget>[
+              new Container(
+                padding: EdgeInsets.only(top: 30),
+                width: MediaQuery.of(context).size.width,
+                alignment: Alignment.topLeft,
+                child: new IconButton(icon: Icon(Icons.arrow_back_ios
+                ), onPressed: () => Navigator.pop(context)),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(209, 71, 78, 1),
+                ),
+              ),
               ClipPath(
                 child: new Container(
                     height: 230,
@@ -799,7 +838,6 @@ class _VolunteerPageState extends State<VolunteerPage> {
                     child: Text('Volunteer',
                         style: TextStyle(
                             color: Color.fromRGBO(209, 71, 78, 1),
-                            
                             fontSize: 40
                         ))
                 ),
