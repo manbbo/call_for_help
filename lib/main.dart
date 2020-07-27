@@ -5,6 +5,11 @@ import 'home.dart';
 import 'notifications.dart';
 import 'chat.dart';
 import 'profile.dart';
+import 'cadastroEmpresa.dart';
+import 'cadastroComunidade.dart';
+import 'cadastroPesquisador.dart';
+import 'cadastroVoluntario.dart';
+import 'person.dart';
 
 import 'pageview.dart';
 
@@ -19,7 +24,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: FirstPage()
+      home: cadastroVolunPage()
+        //home: cadastroVolunPage()
+      //home: cadastroComunPage()
+      //home: cadastroPesqPage()
       //MainPage(
         //pages: <Widget>[Home(title: 'HOMEPAGE',),
           //Notifications(),
