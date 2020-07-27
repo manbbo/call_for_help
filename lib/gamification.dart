@@ -17,7 +17,7 @@ class _AchievementState extends State<Achievement> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Container(
-      height: 80,
+      height: 74,
       child: new Stack(
         textDirection: TextDirection.ltr,
         fit: StackFit.loose,
@@ -26,22 +26,23 @@ class _AchievementState extends State<Achievement> {
             child: ClipOval(
               child: Image.network(imgUrl),
             ),
-            width: 70,
-            height: 70,
+            width: 60,
+            height: 60,
           ),
           new Container(
-            padding: EdgeInsets.only(left: 80, top: 5),
+            padding: EdgeInsets.only(left: 80, top: 2),
+            width: MediaQuery.of(context).size.width-50,
             child: new Text.rich(
               new TextSpan(
                   text: '${widget.quantity.toString()} ${widget.title}',
-                  style: TextStyle(color: Colors.black, fontSize: 30)),
+                  style: TextStyle(color: Colors.black, fontSize: 25)),
               softWrap: true,
             ),
           ),
           new Container(
             alignment: Alignment.centerRight,
             padding: EdgeInsets.only(left: 80, top: 5),
-            child: new IconButton(icon: Icon(Icons.share, size: 40,), onPressed: null)
+            child: new IconButton(icon: Icon(Icons.share, size: 30,), onPressed: null)
           ),
         ],
       ),
@@ -61,12 +62,13 @@ class _AchievementListState extends State<AchievementList> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return ListView.separated(
-      padding: EdgeInsets.all(8),
+    return ListView.builder(
+      padding: EdgeInsets.only(top: 10, bottom: 20, left: 10, right: 10),
       itemBuilder: (BuildContext context, int index) =>
           widget.achievements[index],
       itemCount: widget.achievements.length,
-      separatorBuilder: (BuildContext context, int index) => const Divider(),
+
+      //separatorBuilder: (BuildContext context, int index) => const Divider(),
       addAutomaticKeepAlives: false,
     );
   }

@@ -1,6 +1,14 @@
+import 'package:callforhelp/signup.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:callforhelp/custom/clippers.dart';
+
+import 'home.dart';
+import 'notifications.dart';
+import 'chat.dart';
+import 'profile.dart';
+
+import 'pageview.dart';
 
 class FirstPage extends StatefulWidget {
   @override
@@ -115,7 +123,16 @@ class _FirstPageState extends State<FirstPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),
-                  onPressed: () => {},
+                  onPressed: () => { Navigator.push(context, MaterialPageRoute(builder: (BuildContext build) {
+                    // ignore: missing_return
+                    return MainPage(pages: <Widget>[
+                      // ignore: missing_return
+                      Home(title: 'HOME',),
+                      Notifications(title: 'NOTIFICATIONS',),
+                      ChatPage(title: 'CHATS'),
+                      Profile(nickname: '@carolforhelp', name: 'Carol Help Dias',)
+                    ]);
+                  })) },
                 ),
               ),
             ],
@@ -133,7 +150,7 @@ class _FirstPageState extends State<FirstPage> {
                   color: Color.fromRGBO(209, 71, 78, 1),
                 ),),),
               new Container(
-                padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2) +250),
+                padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2) +230),
                 alignment: Alignment.bottomCenter,
                 child: new Column(
                   children: <Widget>[
@@ -143,12 +160,16 @@ class _FirstPageState extends State<FirstPage> {
                       child: new RaisedButton(
                         child: Text.rich(TextSpan(
                             text: "First Access",
-                            style: TextStyle(fontSize: 24, color: Colors.white))),
+                            style: TextStyle(fontSize: 24, color: Colors.black))),
                         color: Color.fromRGBO(242, 174, 193, 1),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
                         ),
-                        onPressed: () => {},
+                        onPressed: () => {Navigator.push(context, MaterialPageRoute(
+                            builder: (BuildContext build) {
+                              return Choice();
+                            }
+                        ))},
                       ),
                     ),
                     new ButtonTheme(
@@ -157,7 +178,7 @@ class _FirstPageState extends State<FirstPage> {
                       child: new RaisedButton(
                         child: Text.rich(TextSpan(
                             text: "Visitor",
-                            style: TextStyle(fontSize: 24, color: Colors.white))),
+                            style: TextStyle(fontSize: 24, color: Colors.black))),
                         color: Color.fromRGBO(242, 174, 193, 1),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),

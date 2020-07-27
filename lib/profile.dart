@@ -15,36 +15,39 @@ class _ProfileState extends State<Profile> {
     return ClipPath(
       //clipper: Clipper(),
       child: new Container(
-        padding: EdgeInsets.only(top: 50),
-        child: new Stack(
+        child: new Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Positioned(
+            new Container(
               child: new ClipOval(
                 child: Image.network(
                     'https://pbs.twimg.com/profile_images/1192936776765181953/WII_Ai_K_400x400.jpg'),
               ),
               height: 150,
               width: 150,
-              left: 125,
+              alignment: Alignment.centerLeft,
             ),
-            new Container(
-              child: new Text.rich(TextSpan(
-                  text: widget.name,
-                  style: TextStyle(color: Colors.black, fontSize: 30))),
-              alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 155),
-            ),
-            new Container(
-              child: new Text.rich(TextSpan(
-                  text: widget.nickname,
-                  style: TextStyle(color: Colors.black, fontSize: 15))),
-              alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: 190),
-            ),
+            new Container( width: 20,),
+            new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new Container(
+                  child: new Text.rich(TextSpan(
+                      text: widget.name,
+                      style: TextStyle(color: Colors.black, fontSize: 30))),
+                  alignment: Alignment.topCenter,
+                  padding: EdgeInsets.only(top: 15),
+                ),
+                new Container(
+                  child: new Text.rich(TextSpan(
+                      text: widget.nickname,
+                      style: TextStyle(color: Colors.black, fontSize: 15))),
+                  alignment: Alignment.topCenter,
+                  padding: EdgeInsets.only(top: 10),
+                ),
+              ],
+            )
           ],
-        ),
-        decoration: BoxDecoration(
-          color: Colors.amber,
         ),
         height: 300,
       ),
@@ -61,10 +64,25 @@ class _ProfileState extends State<Profile> {
             child: new Stack(
               children: <Widget>[
                 decoration(),
+                new Positioned(child: Container(
+                    alignment: Alignment.center,
+                    width: 280,
+                    height: 40,
+                    child: Text.rich(TextSpan(
+                        text: 'My Achievements',
+                        style: TextStyle(color: Colors.black, fontSize: 20)
+                    )),
+                    decoration: BoxDecoration(
+                        color: Color.fromRGBO(209, 71, 78, 1),
+                        borderRadius:  BorderRadius.circular(20)
+                    ),
+                  ),
+                  top: MediaQuery.of(context).size.height/2.8,
+                  left: MediaQuery.of(context).size.width/5.9,
+                )
+                // padding: EdgeInsets.only(top: MediaQuery.of(context).size.height/4),
               ],
             ),
-            //padding: EdgeInsets.only(top: 50),
-            //alignment: Alignment.topCenter,
           ),
           new Container(
             child: IconButton(
@@ -77,47 +95,35 @@ class _ProfileState extends State<Profile> {
             alignment: Alignment.topRight,
           ),
           new Positioned(
-            height: (MediaQuery.of(context).size.height/2) - 40,
+            height: (MediaQuery.of(context).size.height/2) - 50,
             width: MediaQuery.of(context).size.width,
-            top: (MediaQuery.of(context).size.height/2) - 20,
+            top: (MediaQuery.of(context).size.height/2) - 40,
             child: new AchievementList(
               achievements: [
                 new Achievement(
-                  title: 'Hello world',
+                  title: 'Employee(s) Helping!',
+                  quantity: 50,
+                ),
+                new Achievement(
+                  title: 'First Donation! They thank you!!!',
                   quantity: 1,
                 ),
                 new Achievement(
-                  title: 'Hello world',
-                  quantity: 2,
-                ),
-                new Achievement(
-                  title: 'Hello world',
-                  quantity: 3,
-                ),
-                new Achievement(
-                  title: 'Hello world',
-                  quantity: 4,
-                ),
-                new Achievement(
-                  title: 'Hello world',
+                  title: 'Sponsorships.',
                   quantity: 5,
                 ),
                 new Achievement(
-                  title: 'Hello world',
-                  quantity: 6,
+                  title: 'Families Reached!',
+                  quantity: 150,
                 ),
                 new Achievement(
-                  title: 'Hello world',
-                  quantity: 7,
+                  title: 'Families with Medication!',
+                  quantity: 5,
                 ),
                 new Achievement(
-                  title: 'Hello world',
-                  quantity: 8,
+                  title: 'Water Distributed to Families.',
+                  quantity: 100,
                 ),
-                new Achievement(
-                  title: 'Hello world',
-                  quantity: 9,
-                )
               ],
             ),
           )

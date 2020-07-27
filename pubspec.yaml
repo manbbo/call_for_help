@@ -13,6 +13,7 @@ dependencies:
   google_maps_flutter: ^0.5.27+3
   carousel_slider: ^2.2.1
   cupertino_icons: ^0.1.2
+  webview_flutter: ^0.3.22+1
 
 dev_dependencies:
   flutter_test:

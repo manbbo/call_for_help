@@ -1,17 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'firstpage.dart';
-import 'home.dart';
-import 'notifications.dart';
-import 'chat.dart';
-import 'profile.dart';
-import 'cadastroEmpresa.dart';
-import 'cadastroComunidade.dart';
-import 'cadastroPesquisador.dart';
-import 'cadastroVoluntario.dart';
-import 'person.dart';
-
-import 'pageview.dart';
+import 'choicespage.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,7 +14,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: cadastroVolunPage()
+      //home: VolunteerPage()
+      //home: CommunityPage(),
+      //home: ResearcherPage(),
+      //home: EnterprisePage()
+      home: FirstPage()
+      //home: cadastroVolunPage()
         //home: cadastroVolunPage()
       //home: cadastroComunPage()
       //home: cadastroPesqPage()
