@@ -30,7 +30,7 @@ class _CommunityPageState extends State<CommunityPage> {
                   child: Text('Community',
                       style: TextStyle(
                           color: Color.fromRGBO(209, 71, 78, 1),
-                          fontFamily: '',
+                          
                           fontSize: 40
                       ))
                 ),
@@ -288,7 +288,7 @@ class _EnterprisePageState extends State<EnterprisePage> {
                     child: Text('Enterprise',
                         style: TextStyle(
                             color: Color.fromRGBO(209, 71, 78, 1),
-                            fontFamily: '',
+                            
                             fontSize: 40
                         ))
                 ),
@@ -543,7 +543,7 @@ class _ResearcherPageState extends State<ResearcherPage> {
               child: Text('Researcher',
                   style: TextStyle(
                       color: Color.fromRGBO(209, 71, 78, 1),
-                      fontFamily: '',
+                      
                       fontSize: 40
                   ))
           ),
@@ -799,7 +799,7 @@ class _VolunteerPageState extends State<VolunteerPage> {
                     child: Text('Volunteer',
                         style: TextStyle(
                             color: Color.fromRGBO(209, 71, 78, 1),
-                            fontFamily: '',
+                            
                             fontSize: 40
                         ))
                 ),
