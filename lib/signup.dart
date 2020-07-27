@@ -46,48 +46,59 @@ class _ChoiceState extends State<Choice> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-            children: <Widget>[
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    ClipRect(
-                      child: Container(
-                        padding: EdgeInsets.only(top: 40),
-                        height: 200,
-                        width: MediaQuery.of(context).size.width - 50,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
+        body: new Stack(
+          children: <Widget>[
+            Column(
+              children: <Widget>[
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      ClipRect(
+                        child: Container(
+                          padding: EdgeInsets.only(top: 40),
+                          height: 200,
+                          width: MediaQuery.of(context).size.width - 50,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                          ),
+                          child: Image.asset('assets/images/callforhelp.png'),
                         ),
-                        child: Image.asset('assets/images/callforhelp.png'),
-                       ),
-                    ),
-                    new Container(height: 12),
-                  ],
+                      ),
+                      new Container(height: 12),
+                    ],
+                  ),
                 ),
-              ),
 
-              // perfis circulares
-              new Expanded(
-                flex: 0,
-                  child: new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      circled('empresa', 'Enterprise', EnterprisePage()),
-                      circled('pesquisador', 'Researcher', ResearcherPage()),
-                    ],
-              )),
-              new Expanded(
-                  child: new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      circled('voluntario', 'Volunteer', VolunteerPage()),
-                      circled('comunidade', 'Community', CommunityPage()),
-                    ],
-                  ))
-            ],
-        ),
+                // perfis circulares
+                new Expanded(
+                    flex: 0,
+                    child: new Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        circled('empresa', 'Enterprise', EnterprisePage()),
+                        circled('pesquisador', 'Researcher', ResearcherPage()),
+                      ],
+                    )),
+                new Expanded(
+                    child: new Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        circled('voluntario', 'Volunteer', VolunteerPage()),
+                        circled('comunidade', 'Community', CommunityPage()),
+                      ],
+                    ))
+              ],
+            ),
+            new Container(
+              padding: EdgeInsets.only(top: 30),
+              width: MediaQuery.of(context).size.width,
+              alignment: Alignment.topLeft,
+              child: new IconButton(icon: Icon(Icons.arrow_back_ios
+              ), onPressed: () => Navigator.pop(context)),
+            ),
+          ],
+        )
     );
   }
 }
