@@ -439,7 +439,7 @@ class _EnterprisePageState extends State<EnterprisePage> {
                             child: TextField(
                                 decoration: InputDecoration(
                                   icon: Icon(Icons.contacts, color: Colors.grey,),
-                                  hintText:'Number registration',
+                                  hintText:'Registration Number',
 
                                 )
                             ),
@@ -694,7 +694,7 @@ class _ResearcherPageState extends State<ResearcherPage> {
                             child: TextField(
                                 decoration: InputDecoration(
                                   icon: Icon(Icons.contacts, color: Colors.grey,),
-                                  hintText:'Number registration',
+                                  hintText:'Registration Number',
 
                                 )
                             ),
