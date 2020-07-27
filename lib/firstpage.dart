@@ -144,16 +144,16 @@ class _FirstPageState extends State<FirstPage> {
           new Stack(
             children: <Widget>[
               new Container(
-                padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2) +180),
+                padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2) +140),
                 child: new ClipPath(
                 clipper: FirstPageCustomClipper(),
                 child: Container(
                   width: 500,
-                  height: 287.58,
+                  height: 300,
                   color: Color.fromRGBO(209, 71, 78, 1),
                 ),),),
               new Container(
-                padding: EdgeInsets.only(top: MediaQuery.of(context).size.height- 110),
+                padding: EdgeInsets.only(top: MediaQuery.of(context).size.height- 140),
                 alignment: Alignment.bottomCenter,
                 child: new Column(
                   children: <Widget>[
