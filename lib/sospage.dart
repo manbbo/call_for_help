@@ -154,7 +154,11 @@ class _SOSPageState extends State<SOSPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext build) {
+                    return ChatBot();
+                  }))
+                  },
                 ),
               ),
             ],
@@ -177,7 +181,11 @@ class _SOSPageState extends State<SOSPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext build) {
+                      return ChatBot();
+                    }))
+                  },
                 ),
               ),
             ],
@@ -200,7 +208,11 @@ class _SOSPageState extends State<SOSPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext build) {
+                      return ChatBot();
+                    }))
+                  },
                 ),
               ),
             ],
