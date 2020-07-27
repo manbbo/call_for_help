@@ -130,23 +130,24 @@ class _SOSPageState extends State<SOSPage> {
                   ),
                   new Container(height: 10,),
                   new Container(
-                    width: 320,
+                    width: MediaQuery.of(context).size.width - 50,
                     height: 40,
                     child: new ButtonTheme(
                       child: new RaisedButton(
                         child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             new Container(
                               width: 40,
                               height: 40,
-                              child: Image.asset('assets/images/helpbutton.png'),
+                              child: Image.asset('assets/images/helpbutton2.png'),
                             ),
                             Text.rich(TextSpan(
                                 text: "Sponsor a Community",
-                                style: TextStyle(fontSize: 24, color: Colors.black))),
+                                style: TextStyle(fontSize: 24, color: Color.fromRGBO(242, 174, 193, 1),))),
                           ],
                         ),
-                        color: Color.fromRGBO(242, 174, 193, 1),
+                        color: Color.fromRGBO(56, 60, 59, 1),//Color.fromRGBO(242, 174, 193, 1),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
                         ),

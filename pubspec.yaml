@@ -27,6 +27,15 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Fibre
+      fonts:
+        - asset: assets/fonts/fibre-font.otf
+    - family: Hammersmith
+      fonts:
+        - asset: assets/fonts/HammersmithOne-Regular.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

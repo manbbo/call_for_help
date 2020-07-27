@@ -23,11 +23,22 @@ samples, guidance on mobile development, and a full API reference.
 
 <!--------TEMPLATE--------->
 # Call for Help
-> Call for Help is an app that allows Volunteering and Donation to .
+> Call for Help is an app that allows Volunteering and Donation to Communities in need.
+
 ### Show some :heart: and star the repo to support the project
 
-[![GitHub stars](https://img.shields.io/github/stars/manbbo/call_for_help.svg?style=social&label=Star)](https://github.com/manbbo/call_for_help) [![GitHub forks](https://img.shields.io/github/forks/manbbo/call_for_help.svg?style=social&label=Fork)](https://github.com/manbbo/call_for_help/fork) [![GitHub watchers](https://img.shields.io/github/watchers/manbbo/call_for_help.svg?style=social&label=Watch)](https://github.com/manbbo/call_for_help) [![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo/call_for_help)  
+[![GitHub stars](https://img.shields.io/github/stars/manbbo/call_for_help.svg?style=social&label=Star)](https://github.com/manbbo/call_for_help) 
+[![GitHub forks](https://img.shields.io/github/forks/manbbo/call_for_help.svg?style=social&label=Fork)](https://github.com/manbbo/call_for_help/fork) 
+[![GitHub watchers](https://img.shields.io/github/watchers/manbbo/call_for_help.svg?style=social&label=Watch)](https://github.com/manbbo/call_for_help) 
+[![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo/call_for_help)  
 
+### Some Screenshots
+
+<p float="left">
+  <img src="https://i.imgur.com/50tJKqU.png"  />
+  <img src="https://i.imgur.com/vNPjDMs.png"  />
+  <img src="https://i.imgur.com/xbV5OAQ.png" />
+</p>
 
 ![](header.png)
 
