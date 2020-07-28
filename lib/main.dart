@@ -1,4 +1,10 @@
+import 'package:callforhelp/chat.dart';
+import 'package:callforhelp/home.dart';
 import 'package:callforhelp/mapping.dart';
+import 'package:callforhelp/notifications.dart';
+import 'package:callforhelp/pageview.dart';
+import 'package:callforhelp/profile.dart';
+import 'package:callforhelp/sospage.dart';
 import 'package:flutter/material.dart';
 
 import 'firstpage.dart';
@@ -16,23 +22,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Hammersmith'
       ),
+      home: FirstPage(),
       //home: Mapping(state: 0,)
       //home: VolunteerPage()
       //home: CommunityPage(),
       //home: ResearcherPage(),
       //home: EnterprisePage()
-      home: FirstPage()
+      //home: FirstPage()
       //home: cadastroVolunPage()
         //home: cadastroVolunPage()
       //home: cadastroComunPage()
       //home: cadastroPesqPage()
-      //MainPage(
-        //pages: <Widget>[Home(title: 'HOMEPAGE',),
-          //Notifications(),
-          //ChatPage(),
-         // Profile(nickname: '@carol_macedo_220', name: 'Carol',),
-       // ],
-      //),
+
     );
   }
 }

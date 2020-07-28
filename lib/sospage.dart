@@ -1,8 +1,9 @@
+import 'package:callforhelp/communitylist.dart';
 import 'package:callforhelp/custom/clippers.dart';
+import 'package:callforhelp/sponsorship_profile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:flutter/services.dart';
 
 import 'ibm_generic.dart';
 
@@ -36,7 +37,7 @@ class _SOSPageState extends State<SOSPage> {
         ),
       ) ??
           false;
-    } else if (donation_index < 2){
+    } else if (donation_index < 4){
       setState(() {
         donation_index-= 1;
       });
@@ -98,6 +99,28 @@ class _SOSPageState extends State<SOSPage> {
 
   List<Widget> donations(BuildContext context) {
     return [first_donation_screen(context, donation_index),
+      new GestureDetector(child: new Container(
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(
+          color: Colors.white
+        ),
+        child: CommunitiesList(title: 'COMMUNITIES', context: this.context,),
+      ),
+          onTap: () { setState(() {
+            donation_index++;
+          }); }
+      ),
+      new GestureDetector(child: new Container(
+        height: MediaQuery.of(context).size.height,
+            decoration: BoxDecoration(
+                color: Colors.white
+            ),
+            child: SponsorProfile(name: 'Community Vanzega', nickname: '@xdabahia', context: this.context,),
+          ),
+          onTap: () { setState(() {
+            donation_index++;
+          }); }
+      ),
       second_donation_screen(context, donation_index),
       last_donation_screen(context)];
   }
@@ -156,8 +179,8 @@ class _SOSPageState extends State<SOSPage> {
                   ),
                   onPressed: () => {
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext build) {
-                    return ChatBot();
-                  }))
+                      return ChatBot();
+                    }))
                   },
                 ),
               ),
@@ -223,28 +246,28 @@ class _SOSPageState extends State<SOSPage> {
             height: 40,
             child: new ButtonTheme(
               child: new RaisedButton(
-                child: new Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    new Container(
-                      width: 40,
-                      height: 40,
-                      child: Image.asset('assets/images/helpbutton2.png'),
-                    ),
-                    Text.rich(TextSpan(
-                        text: "Sponsor a Community",
-                        style: TextStyle(fontSize: 18, color: Color.fromRGBO(242, 174, 193, 1),))),
-                  ],
-                ),
-                color: Color.fromRGBO(56, 60, 59, 1),//Color.fromRGBO(242, 174, 193, 1),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                ),
-                onPressed: () => {
-                  setState(() {
-                    donation_index = 1;
-                  })
-                }
+                  child: new Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      new Container(
+                        width: 40,
+                        height: 40,
+                        child: Image.asset('assets/images/helpbutton2.png'),
+                      ),
+                      Text.rich(TextSpan(
+                          text: "Sponsor a Community",
+                          style: TextStyle(fontSize: 18, color: Color.fromRGBO(242, 174, 193, 1),))),
+                    ],
+                  ),
+                  color: Color.fromRGBO(56, 60, 59, 1),//Color.fromRGBO(242, 174, 193, 1),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                  ),
+                  onPressed: () => {
+                    setState(() {
+                      donation_index = 1;
+                    })
+                  }
               ),
             ),
           )
@@ -258,60 +281,60 @@ class _SOSPageState extends State<SOSPage> {
       width: MediaQuery.of(context).size.width - 10,
       alignment: Alignment.bottomCenter,
       child: new Column(
-        children: <Widget>[
-          new Container(
-            width: MediaQuery.of(context).size.width-30,
-            height:MediaQuery.of(context).size.height - 520,
-            padding: EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: Color.fromRGBO(242, 174, 193, 1),
-              borderRadius: BorderRadius.circular(40),
-                boxShadow: <BoxShadow>[
-                  BoxShadow(color: Colors.black, blurRadius: 20.0, offset: Offset(1.0, 8.0), spreadRadius: 0.1)
-                ]
+          children: <Widget>[
+            new Container(
+              width: MediaQuery.of(context).size.width-30,
+              height:MediaQuery.of(context).size.height - 520,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                  color: Color.fromRGBO(242, 174, 193, 1),
+                  borderRadius: BorderRadius.circular(40),
+                  boxShadow: <BoxShadow>[
+                    BoxShadow(color: Colors.black, blurRadius: 20.0, offset: Offset(1.0, 8.0), spreadRadius: 0.1)
+                  ]
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text('ALMOST DONE!!!', style: TextStyle(
+                      fontSize: 25,
+                      color: Color.fromRGBO(56, 60, 59, 1)
+                  ),),
+                  new Container(height: 40,),
+                  Text("You're about to donate: 10KG OF RICE\nTo: Comunity X", style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromRGBO(56, 60, 59, 1)
+                  ),)
+                ],
+              ),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('ALMOST DONE!!!', style: TextStyle(
-                  fontSize: 25,
-                  color: Color.fromRGBO(56, 60, 59, 1)
-                ),),
-                new Container(height: 40,),
-                Text("You're about to donate: 10KG OF RICE\nTo: Comunity X", style: TextStyle(
-                    fontSize: 20,
-                  color: Color.fromRGBO(56, 60, 59, 1)
-                ),)
-              ],
-            ),
-          ),
-          new Container(height: 30,),
-          new Container(
-            width: 200,
-          height: 50,
-          child: new ButtonTheme(
-            child: new RaisedButton(
-                child: new Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text.rich(TextSpan(
-                        text: "DONATE!",
-                        style: TextStyle(fontSize: 25, color: Color.fromRGBO(242, 174, 193, 1),))),
-                  ],
+            new Container(height: 30,),
+            new Container(
+              width: 200,
+              height: 50,
+              child: new ButtonTheme(
+                child: new RaisedButton(
+                    child: new Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text.rich(TextSpan(
+                            text: "DONATE!",
+                            style: TextStyle(fontSize: 25, color: Color.fromRGBO(242, 174, 193, 1),))),
+                      ],
+                    ),
+                    color: Color.fromRGBO(56, 60, 59, 1),//Color.fromRGBO(242, 174, 193, 1),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                    ),
+                    onPressed: () => {
+                      setState(() {
+                        donation_index = 4;
+                      })
+                    }
                 ),
-                color: Color.fromRGBO(56, 60, 59, 1),//Color.fromRGBO(242, 174, 193, 1),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                ),
-                onPressed: () => {
-                  setState(() {
-                    donation_index = 2;
-                  })
-                }
+              ),
             ),
-          ),
-        ),
-      ]
+          ]
       ),
     );
   }
