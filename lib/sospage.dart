@@ -70,7 +70,7 @@ class _SOSPageState extends State<SOSPage> {
                           new Container(
                             width: MediaQuery.of(context).size.width,
                             alignment: Alignment.centerLeft,
-                            child: new IconButton(icon: Icon(Icons.arrow_back_ios, color: Colors.black,),
+                            child: new IconButton(icon: Icon(Icons.arrow_back_ios, color: Color.fromRGBO(56, 60, 59, 1),),
                                 onPressed: () => Navigator.pop(context)),
                           ),
                           new Container(
@@ -122,7 +122,7 @@ class _SOSPageState extends State<SOSPage> {
                 child: new RaisedButton(
                   child: Text.rich(TextSpan(
                       text: "Ask for HELP",
-                      style: TextStyle(fontSize: 18, color: Colors.black))),
+                      style: TextStyle(fontSize: 18, color: Color.fromRGBO(56, 60, 59, 1)))),
                   color: Color.fromRGBO(242, 174, 193, 1),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
@@ -149,7 +149,7 @@ class _SOSPageState extends State<SOSPage> {
                 child: new RaisedButton(
                   child: Text.rich(TextSpan(
                       text: "Help other Communities",
-                      style: TextStyle(fontSize: 18, color: Colors.black))),
+                      style: TextStyle(fontSize: 18, color: Color.fromRGBO(56, 60, 59, 1)))),
                   color: Color.fromRGBO(242, 174, 193, 1),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
@@ -176,7 +176,7 @@ class _SOSPageState extends State<SOSPage> {
                 child: new RaisedButton(
                   child: Text.rich(TextSpan(
                       text: "Provide a Service",
-                      style: TextStyle(fontSize: 18, color: Colors.black))),
+                      style: TextStyle(fontSize: 18, color: Color.fromRGBO(56, 60, 59, 1)))),
                   color: Color.fromRGBO(242, 174, 193, 1),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
@@ -203,7 +203,7 @@ class _SOSPageState extends State<SOSPage> {
                 child: new RaisedButton(
                   child: Text.rich(TextSpan(
                       text: "Share your Data",
-                      style: TextStyle(fontSize: 18, color: Colors.black))),
+                      style: TextStyle(fontSize: 18, color: Color.fromRGBO(56, 60, 59, 1)))),
                   color: Color.fromRGBO(242, 174, 193, 1),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
@@ -271,11 +271,13 @@ class _SOSPageState extends State<SOSPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text('ALMOST DONE!!!', style: TextStyle(
-                  fontSize: 25
+                  fontSize: 25,
+                  color: Color.fromRGBO(56, 60, 59, 1)
                 ),),
                 new Container(height: 40,),
                 Text("You're about to donate: 10KG OF RICE\nTo: Comunity X", style: TextStyle(
-                    fontSize: 20
+                    fontSize: 20,
+                  color: Color.fromRGBO(56, 60, 59, 1)
                 ),)
               ],
             ),
@@ -335,7 +337,7 @@ class _SOSPageState extends State<SOSPage> {
             child: new RaisedButton(
               child: Text.rich(TextSpan(
                   text: "Go to the beginning",
-                  style: TextStyle(fontSize: 18, color: Colors.black))),
+                  style: TextStyle(fontSize: 18, color: Color.fromRGBO(56, 60, 59, 1)))),
               color: Color.fromRGBO(242, 174, 193, 1),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),

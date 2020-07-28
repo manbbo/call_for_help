@@ -34,14 +34,14 @@ class _ProfileState extends State<Profile> {
                 new Container(
                   child: new Text.rich(TextSpan(
                       text: widget.name,
-                      style: TextStyle(color: Colors.black, fontSize: 30))),
+                      style: TextStyle(color: Color.fromRGBO(56, 60, 59, 1), fontSize: 30))),
                   alignment: Alignment.topCenter,
                   padding: EdgeInsets.only(top: 15),
                 ),
                 new Container(
                   child: new Text.rich(TextSpan(
                       text: widget.nickname,
-                      style: TextStyle(color: Colors.black, fontSize: 15))),
+                      style: TextStyle(color: Color.fromRGBO(56, 60, 59, 1), fontSize: 15))),
                   alignment: Alignment.topCenter,
                   padding: EdgeInsets.only(top: 10),
                 ),
@@ -72,7 +72,7 @@ class _ProfileState extends State<Profile> {
             child: IconButton(
                 icon: Icon(
               Icons.settings,
-              color: Colors.black,
+              color: Color.fromRGBO(56, 60, 59, 1),
               size: 40,
             )),
             padding: EdgeInsets.only(top: 30, right: 10),
@@ -117,7 +117,7 @@ class _ProfileState extends State<Profile> {
             height: 40,
             child: Text.rich(TextSpan(
                 text: 'My Achievements',
-                style: TextStyle(color: Colors.black, fontSize: 20)
+                style: TextStyle(color: Color.fromRGBO(56, 60, 59, 1), fontSize: 20)
             )),
             decoration: BoxDecoration(
                 color: Color.fromRGBO(209, 71, 78, 1),
