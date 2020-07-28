@@ -1,3 +1,4 @@
+import 'package:callforhelp/mapping.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class _HomeState extends State<Home> {
 
     super.initState();
     for (int i=0; i< 7; i++) {
-      homeItems.add(new HomeItem(communityNum: i, community_state: "MANAUS - AM", num_needing: 10*i,));
+      homeItems.add(new HomeItem(communityNum: i, community_state: "MANAUS - AM", num_needing: 10*(i+1),));
     }
   }
 
@@ -115,7 +116,9 @@ class _HomeState extends State<Home> {
                               new Container(
                                 child: FlatButton(
                                   child: Text('VIEW MORE DETAILS'.toUpperCase(), style: TextStyle(color: Color.fromRGBO(56, 60, 59, 1)),),
-                                  onPressed: ()=>{},
+                                  onPressed: ()=>{ Navigator.push(context, MaterialPageRoute(builder: (BuildContext build) {
+                                    return new Mapping(state: 0,);
+                                  }))},
                                 ),
                                 padding: EdgeInsets.only(top: 20),
                               )

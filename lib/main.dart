@@ -1,3 +1,4 @@
+import 'package:callforhelp/mapping.dart';
 import 'package:flutter/material.dart';
 
 import 'firstpage.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Hammersmith'
       ),
+      //home: Mapping(state: 0,)
       //home: VolunteerPage()
       //home: CommunityPage(),
       //home: ResearcherPage(),
