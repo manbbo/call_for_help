@@ -265,7 +265,10 @@ class _SOSPageState extends State<SOSPage> {
             padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: Color.fromRGBO(242, 174, 193, 1),
-              borderRadius: BorderRadius.circular(40)
+              borderRadius: BorderRadius.circular(40),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(color: Colors.black, blurRadius: 20.0, offset: Offset(1.0, 8.0), spreadRadius: 0.1)
+                ]
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -327,7 +330,10 @@ class _SOSPageState extends State<SOSPage> {
             padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
                 color: Color.fromRGBO(242, 174, 193, 1),
-                borderRadius: BorderRadius.circular(40)
+                borderRadius: BorderRadius.circular(40),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(color: Colors.black, blurRadius: 20.0, offset: Offset(1.0, 8.0), spreadRadius: 0.1)
+                ]
             ),
           ),
           new Container(height: 30,),
@@ -367,9 +373,7 @@ class _SOSPageState extends State<SOSPage> {
                     borderRadius: BorderRadius.circular(18.0),
                   ),
                   onPressed: () => {
-                    setState(() {
-                      donation_index = 2;
-                    })
+                    Navigator.pop(context)
                   }
               ),
             ),
