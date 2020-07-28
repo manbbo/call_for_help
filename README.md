@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/manbbo/call_for_help.svg?style=social&label=Star)](https://github.com/manbbo/call_for_help) 
 [![GitHub forks](https://img.shields.io/github/forks/manbbo/call_for_help.svg?style=social&label=Fork)](https://github.com/manbbo/call_for_help/fork) 
 [![GitHub watchers](https://img.shields.io/github/watchers/manbbo/call_for_help.svg?style=social&label=Watch)](https://github.com/manbbo/call_for_help) 
-[![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo/call_for_help)  
+[![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo)  
 
 ### Some Screenshots
 
@@ -14,9 +14,9 @@
   <img src="https://i.imgur.com/50tJKqU.png"  />
   <img src="https://i.imgur.com/vNPjDMs.png"  />
   <img src="https://i.imgur.com/xbV5OAQ.png" />
-</---p--->
+</---p
 
-![](header.png)
+![](header.png)--->
 
 ## Installation
 
@@ -26,7 +26,7 @@ Else, you can just use Visual Code or any other IDE that supports Flutter;
 
 
 
-(If you downloaded Android Studio):
+###(If you downloaded Android Studio):
 
 Install it into your machine;
 
@@ -36,7 +36,7 @@ Configure the Environment Variables needed at your machine, with "flutter" as th
 
 
 
-(Else):
+###(Else):
 
 Download [Flutter](https://flutter.dev/docs/get-started/install);
 
