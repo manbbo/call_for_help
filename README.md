@@ -10,11 +10,11 @@
 
 ### Some Screenshots
 
-<p float="left">
+<!---p float="left">
   <img src="https://i.imgur.com/50tJKqU.png"  />
   <img src="https://i.imgur.com/vNPjDMs.png"  />
   <img src="https://i.imgur.com/xbV5OAQ.png" />
-</p>
+</---p--->
 
 ![](header.png)
 
@@ -97,7 +97,7 @@ flutter run
 
 [Liggia](https://www.linkedin.com/in/liggialima/)
 
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
+> If you found this project useful, if it helped you solve a problem or create another solution, or simply you liked it and you want to thank me, consider buying me a cup of :coffee: :smile:
 >
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F8R2Q5GT93MJN) 
 
