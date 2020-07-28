@@ -54,7 +54,7 @@ It can also be used by:
 - researchers and academics;
 - people or community that has sanitation, health and/or food needs. 
 
-_For more examples and information about what is a B corporation, please refer to the [B Corporation Website][https://bcorporation.net/] and to a website that explains [what is a B Corporation](https://bcorporation.net/about-b-corps)._
+_For more examples and information about what is a B corporation, please refer to the [B Corporation Website](https://bcorporation.net/) and to a website that explains [what is a B Corporation](https://bcorporation.net/about-b-corps)._
 
 ## Development setup
 
