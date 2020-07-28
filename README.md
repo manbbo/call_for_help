@@ -1,29 +1,5 @@
-# Call for Help Project
-
-A project for Call for Code aiming to help communities affected by Covid-19.
-
-## Getting Started
-
-This project was made using Flutter application by Grupo Shelter for the Call for Code Hackathon.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view 
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-## For this project, you'll need: 
-
-- Android Studio or another IDE of your preference
-- Flutter
-- A Android Virtual/Physical Device, or an iOS and/or a Mac OS
-
-<!--------TEMPLATE--------->
 # Call for Help
-> Call for Help is an app that allows Volunteering and Donation to Communities in need.
+> Call for Help is an app that allows Volunteering and Donation to help Communities affected by Covid-19.
 
 ### Show some :heart: and star the repo to support the project
 
@@ -44,59 +20,90 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Installation
 
-OS X & Linux:
+If you want to use Android Studio, then [download](https://developer.android.com/studio?hl=es) it through the website;
 
-```sh
-npm install my-crazy-module --save
-```
+Else, you can just use Visual Code or any other IDE that supports Flutter;
 
-Windows:
 
-```sh
-edit autoexec.bat
-```
+
+(If you downloaded Android Studio):
+
+Install it into your machine;
+
+Go to File>Settings>Go to Pluggins and search and download Flutter;
+
+Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path if required;
+
+
+
+(Else):
+
+Download [Flutter](https://flutter.dev/docs/get-started/install);
+
+Unzip it to "C:\". It can be other path but just make sure to know where it is; 
+
+Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path;
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Call for Help can be used by Enterprises that wants to sign-up their employees to help with social and environmental development. 
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+It can also be used by: 
+- people who wants to do any kind of volunteering;
+- people who wants to help individually (donating or providing services);
+- researchers and academics;
+- people or community that has sanitation, health and/or food needs. 
+
+_For more examples and information about what is a B corporation, please refer to the [B Corporation Website][https://bcorporation.net/] and to a website that explains [what is a B Corporation](https://bcorporation.net/about-b-corps)._
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+To develop, you gonna need to:
+- have configured Flutter at your machine and all environment variables needed 
+- have an IDE that supports Flutter
+- have access to CMD or PowerShell
+
+Then, you pull the project from the repository and execute:
 
 ```sh
-make install
-npm test
+flutter pub get
+flutter pub upgrade
+```
+
+and then you're going to be able to do
+
+```sh
+flutter run
 ```
 
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
 * 0.0.1
-    * Work in progress
+    * Work in progress prototype
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+[https://github.com/manbbo/call_for_code](https://github.com/manbbo/call_for_code)
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+### Created By
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[Manbbo](https://github.com/manbbo) ([Instagram](https://www.instagram.com/elmanbbo)) ([Linkedin](https://www.linkedin.com/in/manbbo/))
+
+[Mishelle](https://github.com/Mishelliiii) ([Linkedin](https://www.linkedin.com/in/mishelle-sousa-3b8159135/))
+
+[Felipe](https://github.com/felipenjonas) ([Linkedin](https://www.linkedin.com/in/felipejonas/))
+
+[Beatriz](https://www.linkedin.com/in/annabeatrizbergo/)
+
+[Liggia](https://www.linkedin.com/in/liggialima/)
+
+> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
+>
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F8R2Q5GT93MJN) 
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. [Fork it](https://github.com/manbbo/call_for_help/fork)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
@@ -109,3 +116,4 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/yourname/yourproject/wiki
+
