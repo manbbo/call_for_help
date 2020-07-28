@@ -10,6 +10,9 @@ class Notifications extends StatefulWidget{
 class _NotificationsState extends State<Notifications> {
   @override
   Widget build(BuildContext context) {
+    final List<String> entries = <String>['Manaus-AM', 'Cacique se curou', 'Palmas-TO','Doação de roupas'];
+    final List<int> colorCodes = <int>[40, 40, 40,40];
+
     // TODO: implement build
     return Scaffold(
       body: new Stack(
@@ -32,7 +35,25 @@ class _NotificationsState extends State<Notifications> {
                 color: Color.fromRGBO(226, 227, 219, 1),
               ),
             ),
-          )
+          ),
+
+          ListView.separated(
+            padding: EdgeInsets.only(top: 140, left: 0, bottom: 90),
+            itemCount: entries.length,
+            itemBuilder: (BuildContext context, int index) {
+
+              return Container(
+                height: 87, //altura
+                color: Colors.amber[colorCodes[index]],
+                child: Center(child: Text(' ${entries[index]}')),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+              );
+            },
+
+            separatorBuilder: (BuildContext context, int index) => const Divider(),
+          ),
         ],
       ),
     );
