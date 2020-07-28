@@ -9,6 +9,18 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  List<Widget> homeItems = List<Widget>();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+
+    super.initState();
+    for (int i=0; i< 7; i++) {
+      homeItems.add(new HomeItem(communityNum: i, community_state: "MANAUS - AM", num_needing: 10*i,));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +46,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(top: 100),
+            padding: EdgeInsets.only(top: 70),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -42,7 +54,7 @@ class _HomeState extends State<Home> {
                   alignment: Alignment.center,
                   child: Container(
                     width: MediaQuery.of(context).size.width-30,
-                    height: 160,
+                    height: 180,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
@@ -60,8 +72,8 @@ class _HomeState extends State<Home> {
                             new Column(
                               children: <Widget>[
                                 new Container(
-                                  width: 50,
-                                  height: 50,
+                                  width: 70,
+                                  height: 70,
                                   child: Image.asset('assets/images/sanitation.png'),
                                 ),
                                 new Container(
@@ -73,8 +85,8 @@ class _HomeState extends State<Home> {
                             new Column(
                               children: <Widget>[
                                 new Container(
-                                  width: 50,
-                                  height: 50,
+                                  width: 70,
+                                  height: 70,
                                   child: Image.asset('assets/images/food.png'),
                                 ),
                                 new Container(
@@ -86,18 +98,30 @@ class _HomeState extends State<Home> {
                             new Column(
                               children: <Widget>[
                                 new Container(
-                                  width: 50,
-                                  height: 50,
+                                  width: 70,
+                                  height: 70,
                                   child: Image.asset('assets/images/health.png'),
                                 ),
                                 new Container(
-                                  child: Text('20', style: TextStyle(fontSize: 20, color: Color.fromRGBO(56, 60, 59, 1)),),
+                                  child: Text('2000', style: TextStyle(fontSize: 20, color: Color.fromRGBO(56, 60, 59, 1)),),
                                 )
                               ],
                             ),
                           ],
                         ),
-                        new Row()
+                        new Container(
+                          child: Row(
+                            children: <Widget>[
+                              new Container(
+                                child: FlatButton(
+                                  child: Text('VIEW MORE DETAILS'.toUpperCase(), style: TextStyle(color: Color.fromRGBO(56, 60, 59, 1)),),
+                                  onPressed: ()=>{},
+                                ),
+                                padding: EdgeInsets.only(top: 20),
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
@@ -105,11 +129,13 @@ class _HomeState extends State<Home> {
                 new Container(height: 10,),
                 new Container(
                     width: MediaQuery.of(context).size.width-30,
-                  height: MediaQuery.of(context).size.height - 380,
+                  height: MediaQuery.of(context).size.height - 400,
                   decoration: BoxDecoration(
-                      color: Colors.green,
                       borderRadius: BorderRadius.circular(10)
                   ),
+                  child: ListView.separated(itemBuilder: (BuildContext build, int index) => homeItems[index],
+                      separatorBuilder: (context, index) => Divider(),
+                      itemCount: homeItems.length)
                 )
               ],
             ),
@@ -117,5 +143,42 @@ class _HomeState extends State<Home> {
         ],
       ),
     );
+  }
+}
+//
+class HomeItem extends StatefulWidget {
+  int communityNum; String community_state; int num_needing;
+
+  HomeItem({Key key, this.communityNum, this.community_state, this.num_needing}) : super(key: key);
+  @override
+  _HomeItemState createState() => _HomeItemState();
+}
+
+class _HomeItemState extends State<HomeItem> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Row(
+      children: <Widget>[
+        Container(
+          child: Image.asset('assets/images/community${widget.communityNum}.png'),
+          width: 100,
+          height: 60,
+        ),
+        new Container(
+          padding: EdgeInsets.only(left: 20),
+          width: 170,
+          child: Column(
+            children: <Widget>[
+              Text('${widget.community_state}'),
+              Text('${widget.num_needing} of needing families here')
+            ],
+          ),
+        ),
+        IconButton(
+          icon: Icon(Icons.add),
+        )
+      ],
+    );;
   }
 }
