@@ -13,12 +13,56 @@ class CommunitiesList extends StatefulWidget{
 }
 
 class _CommunitiesListState extends State<CommunitiesList> {
+  final List<String> entries = ['Comunity Vanzega', 'Community Alcantra', 'Community Palmas','Community Roraima'],
+      images = ['5', '4', '6', '3'];
+  final List<Widget> subtitles=[
+    new Row(
+      children: <Widget>[
+        new Container(
+          width: 40,
+          height: 40,
+          child: Image.asset('assets/images/sanitation.png'),
+        ),
+        new Container(
+          width: 40,
+          height: 40,
+          child: Image.asset('assets/images/food.png'),
+        ),
+        new Container(
+          width: 40,
+          height: 40,
+          child: Image.asset('assets/images/health.png'),
+        ),
+      ],
+    ),
+    new Container(
+      width: 40,
+      height: 40,
+      child: Image.asset('assets/images/health.png'),
+    ),
+    new Row(children: <Widget>[
+      new Container(
+        width: 40,
+        height: 40,
+        child: Image.asset('assets/images/sanitation.png'),
+      ),
+      new Container(
+        width: 40,
+        height: 40,
+        child: Image.asset('assets/images/food.png'),
+      ),
+    ],),
+    new Container(
+      width: 40,
+      height: 40,
+      child: Image.asset('assets/images/food.png'),
+    ),
+  ];
+
+  final List<int> colorCodes = <int>[40, 40, 40,40];
+
   @override
   Widget build(BuildContext context) {
-    final List<String> entries = ['Comunity Vanzega', 'Community Alcantra', 'Community Palmas','Community Roraima'],
-        subtitles=['all', "health", 'sanitation, food','food'],
-        images = ['5', '4', '6', '3'];
-    final List<int> colorCodes = <int>[40, 40, 40,40];
     return new Stack(
       children: <Widget>[
         new Positioned(
@@ -66,11 +110,7 @@ class _CommunitiesListState extends State<CommunitiesList> {
                             child: Text(' ${entries[index]}', style: TextStyle(fontSize: 20),
                               softWrap: true, textAlign: TextAlign.left,),
                           ),
-                          new Container(
-                            width: MediaQuery.of(context).size.width/2,
-                            child: Text(' ${subtitles[index]}', style: TextStyle(color: Colors.black38, ),
-                              softWrap: true, textAlign: TextAlign.left,),
-                          )
+                          subtitles[index]
                         ],
                       ),
                       new Container(
