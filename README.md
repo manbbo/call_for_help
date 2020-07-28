@@ -26,7 +26,7 @@ Else, you can just use Visual Code or any other IDE that supports Flutter;
 
 
 
-###(If you downloaded Android Studio):
+### If you downloaded Android Studio:
 
 Install it into your machine;
 
@@ -36,7 +36,7 @@ Configure the Environment Variables needed at your machine, with "flutter" as th
 
 
 
-###(Else):
+### Else:
 
 Download [Flutter](https://flutter.dev/docs/get-started/install);
 
@@ -81,9 +81,6 @@ flutter run
 * 0.0.1
     * Work in progress prototype
 
-## Meta
-
-[https://github.com/manbbo/call_for_code](https://github.com/manbbo/call_for_code)
 
 ### Created By
 
