@@ -25,7 +25,7 @@
                       <img src="https://i.imgur.com/ZFDvtMP.jpg" />
 </p>
 
-![](header.png)>
+<!--![](header.png)-->
 
 ## Installation
 
