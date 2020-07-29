@@ -1,4 +1,10 @@
 # Call for HELP
+
+[![GitHub stars](https://img.shields.io/github/stars/manbbo/call_for_help.svg?style=social&label=Star)](https://github.com/manbbo/call_for_help) 
+[![GitHub forks](https://img.shields.io/github/forks/manbbo/call_for_help.svg?style=social&label=Fork)](https://github.com/manbbo/call_for_help/fork) 
+[![GitHub watchers](https://img.shields.io/github/watchers/manbbo/call_for_help.svg?style=social&label=Watch)](https://github.com/manbbo/call_for_help) 
+[![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo)  
+
 ![](Thumbnail.png)
 
 > Call for Help is an app that allows Volunteering and Donation to help Communities affected by Covid-19.
