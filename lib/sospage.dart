@@ -125,7 +125,7 @@ class _SOSPageState extends State<SOSPage> {
 
   Widget first_donation_screen(BuildContext context, int index) {
     return new Container(
-      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-150, left: 8, right: 8),
+      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-180, left: 8, right: 8),
       width: MediaQuery.of(context).size.width,
       alignment: Alignment.center,
       child: new Column(
@@ -280,10 +280,10 @@ class _SOSPageState extends State<SOSPage> {
   }
   Widget second_donation_screen(BuildContext context, int index) {
     return new Container(
-      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-100, left: 8, right: 8),
-      width: MediaQuery.of(context).size.width - 10,
+      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-120, left: 8, right: 8),
+      width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      alignment: Alignment.bottomCenter,
+      alignment: Alignment.center,
       child: new Column(
           children: <Widget>[
             new Container(
@@ -344,8 +344,8 @@ class _SOSPageState extends State<SOSPage> {
   }
   Widget last_donation_screen(BuildContext context) {
     return new Container(
-      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-100, left: 8, right: 8),
-      width: MediaQuery.of(context).size.width - 10,
+      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-120, left: 8, right: 8),
+      width: MediaQuery.of(context).size.width,
       alignment: Alignment.bottomCenter,
       child: new Column(
         children: <Widget>[
