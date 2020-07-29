@@ -1,4 +1,5 @@
-# Call for Help
+<![](Thumbnail.png)-->
+
 > Call for Help is an app that allows Volunteering and Donation to help Communities affected by Covid-19.
 
 ### Show some :heart: and star the repo to support the project
@@ -27,7 +28,6 @@
 
 <img src="https://i.imgur.com/U71xuWZ.jpg" height="400em" /> <img src="https://i.imgur.com/u5QDRKO.jpg" height="400em" /><img src="https://i.imgur.com/7DJsu3S.jpg" height="400em" /><img src="https://i.imgur.com/OhsTcFF.jpg" height="400em"  /><img src="https://i.imgur.com/ZFDvtMP.jpg" height="400em" />
 
-<!--![](header.png)-->
 
 ## Installation
 
