@@ -15,7 +15,7 @@
     <img src="https://i.imgur.com/oFBCTtv.jpg"  />
     <img src="https://i.imgur.com/tlCEZt8.jpg" />
     <img src="https://i.imgur.com/cElMpFJ.jpg"  />
-      <!--img src="https://i.imgur.com/oFBCTtv.jpg"  tela de chat aqui /-->
+      <img src="https://i.imgur.com/6SCPoDA.jpg"  />
       <img src="https://i.imgur.com/epN6dFn.jpg" />
       <img src="https://i.imgur.com/FJpyKtU.jpg"  />
               <img src="https://i.imgur.com/U71xuWZ.jpg"  />
