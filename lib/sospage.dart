@@ -51,7 +51,6 @@ class _SOSPageState extends State<SOSPage> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return WillPopScope(
       onWillPop: _onWillPop,
       child: Scaffold(
@@ -63,7 +62,7 @@ class _SOSPageState extends State<SOSPage> {
                   child: new ClipPath(
                     child: new Container(
                       width: MediaQuery.of(context).size.width,
-                      height: 320,
+                      height: MediaQuery.of(context).size.height/2.6,
                       padding: EdgeInsets.only(top: 30),
                       alignment: Alignment.topLeft,
                       child: new Column(
@@ -76,8 +75,7 @@ class _SOSPageState extends State<SOSPage> {
                           ),
                           new Container(
                               child: Image.asset('assets/images/applogo.png'),
-                              width: 250,
-                              height: 200
+                              width: MediaQuery.of(context).size.height/4,
                           )
                         ],
                       ),
@@ -127,12 +125,14 @@ class _SOSPageState extends State<SOSPage> {
 
   Widget first_donation_screen(BuildContext context, int index) {
     return new Container(
-      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-100, left: 8, right: 8),
-      width: MediaQuery.of(context).size.width - 10,
-      alignment: Alignment.bottomCenter,
+      padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-150, left: 8, right: 8),
+      width: MediaQuery.of(context).size.width,
+      alignment: Alignment.center,
       child: new Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           new Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Container(
                 child: new Image.asset('assets/images/comunidade.png'),
@@ -160,6 +160,7 @@ class _SOSPageState extends State<SOSPage> {
             ],
           ),
           new Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Container(
                 child: new Image.asset('assets/images/empresa.png'),
@@ -187,6 +188,7 @@ class _SOSPageState extends State<SOSPage> {
             ],
           ),
           new Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Container(
                 child: new Image.asset('assets/images/voluntario.png'),
@@ -214,6 +216,7 @@ class _SOSPageState extends State<SOSPage> {
             ],
           ),
           new Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Container(
                 child: new Image.asset('assets/images/pesquisador.png'),
@@ -279,12 +282,13 @@ class _SOSPageState extends State<SOSPage> {
     return new Container(
       padding: EdgeInsets.only(top: (MediaQuery.of(context).size.height/2)-100, left: 8, right: 8),
       width: MediaQuery.of(context).size.width - 10,
+      height: MediaQuery.of(context).size.height,
       alignment: Alignment.bottomCenter,
       child: new Column(
           children: <Widget>[
             new Container(
               width: MediaQuery.of(context).size.width-30,
-              height:MediaQuery.of(context).size.height - 520,
+              height:MediaQuery.of(context).size.height - 420,
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Color.fromRGBO(242, 174, 193, 1),
@@ -349,7 +353,7 @@ class _SOSPageState extends State<SOSPage> {
             alignment: Alignment.center,
             child: Icon(Icons.check_circle, color: Colors.green,size: 200,),
             width: MediaQuery.of(context).size.width-30,
-            height:MediaQuery.of(context).size.height - 520,
+            height:MediaQuery.of(context).size.height - 420,
             padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
                 color: Color.fromRGBO(242, 174, 193, 1),

@@ -109,7 +109,8 @@ class _MainPageState extends State<MainPage> {
                     myIcon[2],
                     size: 40,
                   ),
-                  onPressed: () => {_onItemTapped(2),
+                  onPressed: () => {
+                    _onItemTapped(2),
                     colors[2] = Color.fromRGBO(242, 174, 193, 1),
                     colors[1] = Color.fromRGBO(56, 60, 59, 1),
                     colors[0] = Color.fromRGBO(56, 60, 59, 1),

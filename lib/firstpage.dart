@@ -53,6 +53,7 @@ class _FirstPageState extends State<FirstPage> {
                   child: new TextFormField(
                     autocorrect: false,
                     enableSuggestions: false,
+                    initialValue: 'carolforhelp',
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8),
@@ -84,6 +85,7 @@ class _FirstPageState extends State<FirstPage> {
                               style: BorderStyle.solid,
                             ))),
                     autocorrect: false,
+                    initialValue: 'carolforhelp',
                     enableSuggestions: false,
                     keyboardType: TextInputType.visiblePassword,
                     obscureText: true,

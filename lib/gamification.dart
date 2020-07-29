@@ -10,12 +10,9 @@ class Achievement extends StatefulWidget {
 }
 
 class _AchievementState extends State<Achievement> {
-  String imgUrl =
-      'https://cdn.icon-icons.com/icons2/2108/PNG/512/flutter_icon_130936.png';
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Container(
       height: 74,
       child: new Stack(
@@ -24,8 +21,9 @@ class _AchievementState extends State<Achievement> {
         children: <Widget>[
           new Container(
             child: ClipOval(
-              child: Image.network(imgUrl),
+              child: Image.asset('assets/images/conquista.png'),
             ),
+            //color: Color.fromRGBO(209, 71, 78, 100),
             width: 60,
             height: 60,
           ),

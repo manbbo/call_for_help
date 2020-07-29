@@ -131,7 +131,8 @@ class _HomeState extends State<Home> {
                 ),
                 new Container(height: 10,),
                 new Container(
-                    width: MediaQuery.of(context).size.width-30,
+                  padding: EdgeInsets.only(left:15),
+                    width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height - 400,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10)
@@ -160,17 +161,16 @@ class HomeItem extends StatefulWidget {
 class _HomeItemState extends State<HomeItem> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Row(
       children: <Widget>[
-        Container(
+        new Container(
           child: Image.asset('assets/images/community${widget.communityNum}.png'),
           width: 100,
           height: 60,
         ),
         new Container(
           padding: EdgeInsets.only(left: 20),
-          width: 170,
+          width: MediaQuery.of(context).size.width - 180,
           child: Column(
             children: <Widget>[
               Text('${widget.community_state}'),
@@ -178,7 +178,7 @@ class _HomeItemState extends State<HomeItem> {
             ],
           ),
         ),
-        IconButton(
+        new IconButton(
           icon: Icon(Icons.add),
         )
       ],
