@@ -312,7 +312,7 @@ class _SOSPageState extends State<SOSPage> {
                 ],
               ),
             ),
-            new Container(height: 30,),
+            new Container(height: 10,),
             new Container(
               width: 200,
               height: 50,
@@ -363,7 +363,7 @@ class _SOSPageState extends State<SOSPage> {
                 ]
             ),
           ),
-          new Container(height: 30,),
+          new Container(height: 10,),
           new ButtonTheme(
             minWidth: 240,
             height: 40,
