@@ -25,11 +25,7 @@
 
 - Help Button / Sponsorship Button
 
-<img src="https://i.imgur.com/U71xuWZ.jpg" height="400em" />
-<img src="https://i.imgur.com/u5QDRKO.jpg" height="400em" />
-<img src="https://i.imgur.com/7DJsu3S.jpg" height="400em" />
-<img src="https://i.imgur.com/OhsTcFF.jpg" height="400em"  />
-<img src="https://i.imgur.com/ZFDvtMP.jpg" height="400em" />
+<img src="https://i.imgur.com/U71xuWZ.jpg" height="400em" /> <img src="https://i.imgur.com/u5QDRKO.jpg" height="400em" /><img src="https://i.imgur.com/7DJsu3S.jpg" height="400em" /><img src="https://i.imgur.com/OhsTcFF.jpg" height="400em"  /><img src="https://i.imgur.com/ZFDvtMP.jpg" height="400em" />
 
 <!--![](header.png)-->
 
