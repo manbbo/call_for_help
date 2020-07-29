@@ -10,13 +10,22 @@
 
 ### Some Screenshots
 
-<!---p float="left">
-  <img src="https://i.imgur.com/50tJKqU.png"  />
-  <img src="https://i.imgur.com/vNPjDMs.png"  />
-  <img src="https://i.imgur.com/xbV5OAQ.png" />
-</---p
+<p float="left">
+  <img src="https://i.imgur.com/11bokqL.jpg"  />
+    <img src="https://i.imgur.com/oFBCTtv.jpg"  />
+    <img src="https://i.imgur.com/tlCEZt8.jpg" />
+    <img src="https://i.imgur.com/cElMpFJ.jpg"  />
+      <!--img src="https://i.imgur.com/oFBCTtv.jpg"  tela de chat aqui /-->
+      <img src="https://i.imgur.com/epN6dFn.jpg" />
+      <img src="https://i.imgur.com/FJpyKtU.jpg"  />
+              <img src="https://i.imgur.com/U71xuWZ.jpg"  />
+              <img src="https://i.imgur.com/u5QDRKO.jpg" />
+              <img src="https://i.imgur.com/7DJsu3S.jpg"  />
+                      <img src="https://i.imgur.com/OhsTcFF.jpg"  />
+                      <img src="https://i.imgur.com/ZFDvtMP.jpg" />
+</p>
 
-![](header.png)--->
+![](header.png)>
 
 ## Installation
 
