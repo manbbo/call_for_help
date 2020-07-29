@@ -87,7 +87,7 @@ class _SponsorProfileState extends State<SponsorProfile> {
               achievements: [
                 new Achievement(
                   title: 'kg of Rice needed',
-                  quantity: 50,
+                  quantity: 10,
                 ),
                 new Achievement(
                   title: 'kg of Beans needed',
